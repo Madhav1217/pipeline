@@ -15,10 +15,5 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- deployment: VMDeploy
-    displayName: web
-    environment:
-      name:  VMenv
-      resourceType: VirtualMachine
-      tags: Windows 
+
 
